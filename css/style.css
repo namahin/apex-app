@@ -174,7 +174,9 @@ main {
 
 .order-status {
     margin-bottom: 39px;
+    text-align: center;
 }
+
 
 .parts-status h3 {
     font-weight: 500;
