@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Status</title>
+    <!-- Google Fonts: 'Poppins' -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <div class="site-logo"><a href="index.html"><img src="images/site-logo.png" alt="Apex Logo"></a></div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="order-info">
+                <h3>Order #GA25608</h3>
+                <p>Estimeted Delivery: <span>24 Jan, 2022</span></p>
+            </div>
+
+
+            <!-- json element start from here -->
+            <div class="order-status">
+
+            </div>
+            <!-- json element end here -->
+
+
+            <div class="parts-status">
+                <h3>Parts Status</h3>
+                <div class="status-checkbox">
+                    <ul>
+                        <li><label for="cpu"><input type="checkbox" name="status" id="cpu" checked>CPU - Intel i5-11600k</label></li>
+                        <li><label for="cooler"><input type="checkbox" name="status" id="cooler" checked>CPU Cooler - Intel Stock Cooler</label></li>
+                        <li><label for="mobo"><input type="checkbox" name="status" id="mobo">Motheboard - AsRock B560M HDV</label></li>
+                        <li><label for="ram"><input type="checkbox" name="status" id="ram" checked>RAM - 16GB DDR4-3600</label></li>
+                        <li><label for="psu"><input type="checkbox" name="status" id="psu">Pwoer Suply - 750W</label></li>
+                        <li><label for="gpu"><input type="checkbox" name="status" id="gpu" checked>GPU - Nvidia RTX 3060</label></li>
+                        <li><label for="ssd"><input type="checkbox" name="status" id="ssd">SSD - 256GB NVMe</label></li>
+                        <li><label for="hdd"><input type="checkbox" name="status" id="hdd">HDD - 1TB HDD</label></li>
+                        <li><label for="case"><input type="checkbox" name="status" id="case" checked>Case - Corsair 465X</label></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+    <!-- Script -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    max-width: 768px;
+    margin: auto;
+}
+
+:root {
+    --color-primary: #FD194A;
+    --color-secondary: #223260;
+    --color-text: #ffffffe6;
+    --bg-dark: #0F172E;
+}
+
+::placeholder {
+    opacity: .9;
+    color: var(--color-text);
+}
+
+input[type=checkbox]::after {
+    content: "";
+    border: 1px solid var(--color-primary);
+    background: #111931;
+    border-radius: 2px;
+    background-color: #111931;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+input[type=checkbox]:checked::after {
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: center center;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.container {
+    padding: 0 16px;
+}
+
+header {
+    background-color: var(--color-primary);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-logo {
+    line-height: 0;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.site-logo img {
+    max-width: 100px;
+}
+
+main {
+    background-color: var(--bg-dark);
+    height: calc(100vh - 92px);
+    overflow: auto;
+    padding-bottom: 32px;
+}
+
+.order-form {
+    box-shadow: 0px 5px 123px #00000005;
+    border-radius: 0 0 9px 9px;
+    background-color: var(--color-secondary);
+    padding: 20px;
+    padding-top: 37px;
+    padding-bottom: 175px;
+}
+
+.field {
+    border: 1px solid #4D4B9C;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    position: relative;
+    background-color: var(--bg-dark);
+}
+
+.field:last-of-type {
+    margin-bottom: 18px;
+}
+
+.field label {
+    line-height: 0;
+    position: absolute;
+    width: 20px;
+    left: 16px;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-right: 1px solid #ffffff1a;
+    padding: 5px 0;
+    padding-right: 15px;
+}
+
+.field label img {
+    width: 100%;
+}
+
+.field input {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    background: transparent;
+    border: none;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    padding-left: 65px;
+    opacity: 1;
+    color: var(--color-text);
+}
+
+.order-form form button {
+    padding: 15px 30px;
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--color-primary);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: linear .2s;
+}
+
+.order-form form button:hover {
+    background-color: var(--bg-dark);
+}
+
+.order-info {
+    box-shadow: 0px 5px 123px #00000005;
+    background-color: var(--color-secondary);
+    border-radius: 0 0 9px 9px;
+    text-align: center;
+    padding: 16px;
+    padding-bottom: 13px;
+    margin-bottom: 24px;
+}
+
+.order-info h3 {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    color: var(--color-text);
+    margin-bottom: 6px;
+}
+
+.order-info p {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 16px;
+    color: var(--color-text);
+}
+
+.order-status {
+    margin-bottom: 39px;
+}
+
+.parts-status h3 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--color-text);
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+.status-checkbox {
+    background: #18234330;
+    border: 1px solid #223260;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 123px #00000005;
+    border-radius: 9px;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.status-checkbox ul {
+    list-style: none;
+    column-count: 2;
+}
+
+.status-checkbox ul li {
+    margin-bottom: 10px;
+    max-width: fit-content;
+}
+
+.status-checkbox ul li label {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 12px;
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+}
+
+.status-checkbox ul li label input {
+    margin-right: 10px;
+    position: relative;
+}
