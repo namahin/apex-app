@@ -194,7 +194,6 @@ main {
     box-shadow: 0px 5px 123px #00000005;
     border-radius: 9px;
     padding: 20px;
-    padding-bottom: 10px;
 }
 
 .status-checkbox ul {
@@ -204,19 +203,35 @@ main {
 
 .status-checkbox ul li {
     margin-bottom: 10px;
-    max-width: fit-content;
 }
 
-.status-checkbox ul li label {
+.status-checkbox ul li {
     font-weight: 400;
     font-size: 9px;
-    line-height: 12px;
+    line-height: 14px;
     color: var(--color-text);
-    display: flex;
-    align-items: center;
+    display: block;
+    position: relative;
+    padding-left: 23px;
 }
 
-.status-checkbox ul li label input {
-    margin-right: 10px;
-    position: relative;
+.status-checkbox ul li::before {
+    content: "";
+    border: 1px solid var(--color-primary);
+    border-radius: 2px;
+    height: 13px;
+    width: 13px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.status-checkbox ul li.checked::before {
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-size: 9px;
+    background-position: center center;
+    background-color: var(--color-primary);
 }
